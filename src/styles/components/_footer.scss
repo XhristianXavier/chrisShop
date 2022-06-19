@@ -1,0 +1,56 @@
+.footer {
+  background-color: var(--color-grey-light); 
+  padding: 2.5rem 0; 
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        @media screen and (min-width: $bp-large) {
+            grid-template-columns: repeat(3, 300px);
+            align-items:center;
+            text-align: initial;
+            justify-content: space-between;
+        }
+    }
+}
+
+.footer-contacts {
+    @media screen and (min-width: $bp-large){
+        justify-self: start;
+    }
+        li {
+            margin-bottom: 1.5rem;
+        } 
+        &__title {
+            font-weight: bold;
+        }
+}
+
+.footer-social-media {
+    display: flex;
+    column-gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    justify-self: center;
+    @media screen and (min-width: $bp-large) {
+        margin-bottom: initial;
+    }
+    &__img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+.footer-logo-company {
+    color: var(--color-text-primary);
+    font-family: 'Dancing Script', sans-serif;
+    font-size:1.5rem;
+    font-weight: 600;
+    @media screen and (min-width: $bp-medium) {
+        font-size: 2rem;
+    }
+    @media screen and (min-width: $bp-large) {
+        font-size: 2.5rem;
+        justify-self: end;
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Zapatillas artesanales peruanas",
+            "description": "Zapatillas 100% de origen peruano hecho por especialistas.",
+            "image": "product-1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Zapatillas de lujo",
+            "description": "Zapatillas de lujo hecho en Italia",
+            "image": "product-2.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Zapatillas de lujo",
+            "description": "Zapatillas de lujo hecho en Italia",
+            "image": "product-3.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Zapatillas de lujo",
+            "description": "Zapatillas de lujo hecho en Italia",
+            "image": "product-4.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Zapatillas de lujo",
+            "description": "Zapatillas de lujo hecho en Italia",
+            "image": "product-5.jpg"
+        }
+    ]
+}

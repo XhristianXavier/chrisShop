@@ -1,0 +1,10 @@
+.cart-shopping {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    color: var(--color-text-primary);
+    &__image {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

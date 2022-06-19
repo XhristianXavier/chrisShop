@@ -1,0 +1,47 @@
+.banner {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 3.5rem);
+    width: 100%;
+    position:relative;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+       
+    }
+    
+    &__wrapper {
+        max-width: initial;
+        margin: initial;
+        width: initial;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform:translate(-50%, -50%);
+        text-align: center;
+        z-index: var(--z-normal);
+        width: 60%;
+    }
+
+    &__title {
+        font-family: 'Dancing Script', sans-serif;
+        color: rgba(255, 255, 255, .8);
+        font-size:3rem;
+        font-weight: 600;
+        @media screen and (min-width: $bp-medium){
+            font-size: 4rem;
+        }
+
+        @media screen and (min-width: $bp-large){
+            font-size: 5rem;
+        }
+    }
+}

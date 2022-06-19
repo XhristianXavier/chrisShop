@@ -1,0 +1,18 @@
+.btn {
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: var(--color-primary);
+    color: black;
+     padding: 1em 2em;
+     border-radius: 2.25em;
+    @media screen and (min-width: $bp-medium) {
+        font-size: 1.2rem;
+    }
+    @media screen and (min-width: $bp-large) {
+        font-size: 1.4rem;
+    }
+    &:hover {
+      background-color: var(--color-primary-light);
+    }
+}
+

@@ -1,0 +1,25 @@
+$bp-small: 480px;
+$bp-medium: 768px;
+$bp-large: 1024px;
+$bp-largest: 1200px;
+
+// variables
+:root {
+    --white: #fff;
+    --z-negative: -1;
+    --z-normal: 1;
+    --z-sticky: 10;
+    --color-primary: rgb(19, 187, 243);
+    --color-primary-light: rgb(164, 232, 255);
+    --color-secondary: rgb(247, 164, 9);
+    --color-text-primary: rgb(37, 37, 37);
+    --color-grey-light: rgb(212, 212, 212);
+    --color-grey-medium: grey;
+    --color-grey-dark: rgb(48, 48, 48);
+    --color-black: #000;
+    --font-small: .75rem;
+    --font-medium: 1rem;
+    --font-big: 1.5rem;
+    --font-bigger: 2rem;
+}
+

@@ -1,0 +1,57 @@
+.contacts {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    &__title {
+        margin-bottom: 2rem;
+        @media screen and (min-width: $bp-medium) {
+         font-size: 3rem;
+         margin-bottom: 3rem;   
+        }
+    }
+    &__wrapper {
+        @media screen and (min-width: $bp-medium){
+            width: 40%;
+        }
+    }
+}
+
+.form-contacts {
+    &__field {
+        margin-top: 1.5rem;
+        display:flex;
+        flex-wrap: wrap;
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+    &__label {
+       margin-bottom: .5rem;
+    }
+    &__input {
+        flex: 1 0 100%;
+        border-radius: 5px;
+        padding: 1rem .5rem;
+        background-color: var(--color-grey-light);
+        border: none;
+        &:focus{
+            outline:none;
+        }
+        &--textarea{
+            word-break: break-word;
+            height: 10rem;
+            width: 10rem;
+            resize: none;
+            &::after {
+                content: 'Mensaje';
+                display: block;
+            }
+        }
+    }
+    &__button {
+        background-color: var(--color-black);
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 20px;
+        color: white;
+    }
+}
