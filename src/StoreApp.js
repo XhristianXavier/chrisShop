@@ -5,7 +5,7 @@ import { Header } from './components/Header'
 import { Contacts } from './pages/Contacts'
 import { Home } from './pages/Home.js'
 import { Shop } from './pages/Shop'
-
+import { Product } from './pages/Product'
 
 export const StoreApp = () => {
   return (
@@ -16,6 +16,7 @@ export const StoreApp = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/product/:productId" element={<Product/>}/>
       </Routes>
       <Footer />
     </Router> 
