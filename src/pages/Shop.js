@@ -10,7 +10,6 @@ export const Shop = () => {
 
     useEffect(() =>{
         axios.get('./database/Products.json').then((response) =>{
-            console.log('Response: ', response);
             setProducts(response.data);
         });
     }, []);

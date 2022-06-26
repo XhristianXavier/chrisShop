@@ -4,6 +4,8 @@ import { useNavigate, useParams } from 'react-router';
 import { CartShopping } from '../components/CartShopping';
 import { storeImages } from '../helpers/storeImages';
 import { NavLink } from 'react-router-dom';
+import { RadioButton } from '../components/RadioButton';
+
 export const Product = () => {
 
   const { productId } = useParams();
@@ -13,12 +15,15 @@ export const Product = () => {
 
 
   const [product, setProduct] = useState({});
+  const [productSizes, setProductSizes] = useState([]);
+  const [cantidadProducto, setCantidadProducto] = useState(0);
 
   useEffect(() => {
     axios.get('../database/Products.json').then((response) => {
       const products = response.data;
       const productFindById = products.filter((product) => product.id === Number(productId))[0];
       setProduct(productFindById);
+      setProductSizes(productFindById.sizes);
     });
   }, []);
 
@@ -37,39 +42,16 @@ export const Product = () => {
               <span className="product-features__price">S/. {product.price}</span>
               <div className="product-sizes">
                 <div className="product-sizes__title">Talla:</div>
-                <label className="product-sizes__label">
-                  <input name="productRadio1" type="radio" />
-                  <span className="product-sizes__button"></span>
-                 <span className="product-sizes__number"> 
-                    XS (35-37.5)
-                  </span>
-                </label>
-                <label className="product-sizes__label">
-                  <input name="productRadio1" type="radio" checked />
-                  <span className="product-sizes__button"></span>
-                  <span className="product-sizes__number"> 
-                    S (36-39)
-                  </span>
-                </label>
-                <label className="product-sizes__label">
-                  <input name="productRadio1" type="radio" />
-                  <span className="product-sizes__button"></span>
-                  <span className="product-sizes__number"> 
-                    M (40-42)
-                  </span>
-                </label>
-                <label className="product-sizes__label">
-                  <input name="productRadio1" type="radio" />
-                  <span className="product-sizes__button"></span>
-                  <span className="product-sizes__number"> 
-                    L (43-46)
-                  </span>
-                </label>
+                {
+                  productSizes.map((size) =>
+                    <RadioButton key={size.id} value={`${size.value} (${size.range})`}></RadioButton>
+                  )
+                }
               </div>
               <div className="product-cant">
                 <div className="product-cant__cart-shop">En stock: 4 productos disponibles</div>
                 <span className="product-cant__text-cant">Cantidad:</span>
-                <input className="product-cant__input" type="text" />
+                <input className="product-cant__input" type="text" value={cantidadProducto} />
                 <NavLink className="product-cant__addcart" to="#">Agregar al carrito</NavLink>
                 {/* <NavLink className="product-cant__checkout" to="#">Ir a la caja</NavLink> */}
               </div>

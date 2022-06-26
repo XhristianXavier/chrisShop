@@ -1,42 +1,147 @@
- [
-        {
-            "id": 1,
-            "name": "Zapatillas artesanales peruanas",
-            "description": "Zapatillas 100% de origen peruano hecho por grandes artesanos peruanos especialistas.",
-            "image": "product-1",
-            "price":300.00,
-            "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
-            "id": 2,
-            "name": "Zapatillas de lujo",
-            "description": "Zapatillas de lujo hecho en Italia con materiales de una alta calidad.",
-            "image": "product-2",
-            "price":450.00,
-            "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
-            "id": 3,
-            "name": "Zapatillas económicas",
-            "description": "Zapatillas de bajo coste y de una alta durabilidad.",
-            "image": "product-3",
-            "price":120.00,
-            "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
-            "id": 4,
-            "name": "Zapatillas deportivas",
-            "description": "Zapatillas deportivas ideal para correr y hacer ejercicio.",
-            "image": "product-4",
-            "price":250.00,
-            "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
-            "id": 5,
-            "name": "Zapatillas para mujeres",
-            "description": "Zapatillas para señoritas, comodos y suaves.",
-            "image": "product-5",
-            "price":300.00,
-            "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        }
-    ]
+[
+    {
+        "id": 1,
+        "name": "Zapatillas artesanales peruanas",
+        "description": "Zapatillas 100% de origen peruano hecho por grandes artesanos peruanos especialistas.",
+        "image": "product-1",
+        "price": 300.00,
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "sizes": [
+            {
+                "id": "1",
+                "value": "XS",
+                "range": "35-37.5"
+            },
+            {
+                "id": "2",
+                "value": "S",
+                "range": "36-39"
+            },
+            {
+                "id": "3",
+                "value": "M",
+                "range": "40-42"
+            },
+            {
+                "id": "4",
+                "value": "L",
+                "range": "43-46"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Zapatillas de lujo",
+        "description": "Zapatillas de lujo hecho en Italia con materiales de una alta calidad.",
+        "image": "product-2",
+        "price": 450.00,
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "sizes": [
+            {
+                "id": "1",
+                "value": "XS",
+                "range": "35-37.5"
+            },
+            {
+                "id": "2",
+                "value": "S",
+                "range": "36-39"
+            },
+            {
+                "id": "3",
+                "value": "M",
+                "range": "40-42"
+            },
+            {
+                "id": "4",
+                "value": "L",
+                "range": "43-46"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Zapatillas económicas",
+        "description": "Zapatillas de bajo coste y de una alta durabilidad.",
+        "image": "product-3",
+        "price": 120.00,
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "sizes": [
+            {
+                "id": "1",
+                "value": "XS",
+                "range": "35-37.5"
+            },
+            {
+                "id": "2",
+                "value": "S",
+                "range": "36-39"
+            },
+            {
+                "id": "3",
+                "value": "M",
+                "range": "40-42"
+            },
+            {
+                "id": "4",
+                "value": "L",
+                "range": "43-46"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Zapatillas deportivas",
+        "description": "Zapatillas deportivas ideal para correr y hacer ejercicio.",
+        "image": "product-4",
+        "price": 250.00,
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "sizes": [
+            {
+                "id": "1",
+                "value": "XS",
+                "range": "35-37.5"
+            },
+            {
+                "id": "2",
+                "value": "S",
+                "range": "36-39"
+            },
+            {
+                "id": "3",
+                "value": "M",
+                "range": "40-42"
+            },
+            {
+                "id": "4",
+                "value": "L",
+                "range": "43-46"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Zapatillas para mujeres",
+        "description": "Zapatillas para señoritas, comodos y suaves.",
+        "image": "product-5",
+        "price": 300.00,
+        "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "sizes": [
+            {
+                "id": "1",
+                "value": "S",
+                "range": "36-39"
+            },
+            {
+                "id": "2",
+                "value": "M",
+                "range": "40-42"
+            },
+            {
+                "id": "3",
+                "value": "L",
+                "range": "43-46"
+            }
+        ]
+    }
+]
