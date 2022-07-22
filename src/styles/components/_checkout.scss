@@ -1,0 +1,23 @@
+.checkout {
+    padding-top: 3rem;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        @media screen and (min-width: $bp-large) {
+            grid-template-columns: 3fr 2fr;
+        }
+    }
+
+}
+
+.shopping-cart {
+    &__links {
+        display:flex;
+        gap: 1rem;
+        color: var(--color-grey-medium);
+        margin-bottom: 1rem;
+    }
+    &__link {
+        color: var(--color-grey-medium);
+    }
+}

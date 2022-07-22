@@ -1,0 +1,20 @@
+.table-products {
+    width:100%;
+    border-collapse: collapse;
+    &__row {
+        border: 1px solid var(--color-grey-light);
+    }
+    &__cell {
+        padding: 1.2rem .8rem;
+        border-bottom: 1px solid var(--color-grey-light);
+        font-size: 1.15rem;
+        &--header {
+            text-align: left;
+            font-weight: normal;
+            font-size: initial;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,17 @@
+.item-card {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    column-gap: 1.5rem;
+    &__img {
+        object-fit: contain;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+}
